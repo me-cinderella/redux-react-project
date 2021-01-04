@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 import Routes from 'routes';
+import rootReducer from 'reducers';
+import fetchProducts from 'actions/fetchActions';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'styles/main.css';
+
+rootReducer.dispatch(fetchProducts())
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={rootReducer}>
     <Routes />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
