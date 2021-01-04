@@ -1,0 +1,27 @@
+.btn-primary {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price-label, .qty-label, .type-lbel {
+    font-size: 14px;
+    color: gray;
+}
+
+.name-label {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.product-image {
+    width: auto !important;
+    height: 200px;
+}
+
+.card {
+    max-height: 300px;
+}
