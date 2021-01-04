@@ -22,7 +22,7 @@ const ItemList = (props) => {
                                 <Row>
             
                                 <Col xs={6}>
-                                    <p className="price-label m-0">Precio: {item.price} CPL </p>
+                                    <p className="price-label m-0">Precio: ${item.price} CPL </p>
                                     <p className="qty-label m-0">Cantidad: {item.quantity}</p>
                                 </Col>
                                 <Col xs={6} className="align-self-center">

@@ -38,7 +38,8 @@ class Cart extends Component {
                             <hr className="my-4"/>
                             <div className="text-center">
                                 <button type="button" className="btn btn-primary btn-sm m-1" onClick={() => this.props.checkout()}>CHECKOUT</button>
-                                <button type="button" className="btn btn-light btn-sm m-1" onClick={() => this.props.clear()}>CLEAR</button>
+                                <button type="button" className="btn btn-light btn-sm m-1" onClick={() => this.props.clear()}>Limpiar</button>
+                                <Link to="/" className="btn btn-light btn-sm">Seguir comprando</Link>
                             </div>
 
                         </Card>

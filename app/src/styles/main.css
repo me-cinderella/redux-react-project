@@ -18,10 +18,31 @@
 }
 
 .product-image {
-    width: auto !important;
+    width: auto;
     height: 200px;
 }
 
-.card {
-    max-height: 300px;
+.shop-product-card {
+    height: 250px;
 }
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.navbar > a:hover {
+    text-decoration: underline !important;
+    cursor: pointer !important;
+}
+
+.navbar > a > img {
+    margin-right: 10px;
+}
+
