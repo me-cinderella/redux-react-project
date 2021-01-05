@@ -16,7 +16,7 @@ class Cart extends Component {
             <Row className="justify-content-center">
                 <Col xs={6}>
                     {
-                        this.props.items.length > 0 ?
+                        this.props.items.length > 0 && this.props.checkout===false ?
                         <ItemList/> :
                         <div className="p-3 text-center text-muted">
                             El carrito esta vacio
