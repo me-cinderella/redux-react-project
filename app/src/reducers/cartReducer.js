@@ -5,7 +5,7 @@ const initialState = {
 }
 
 export const totalCalculate = items => {
-    return items.reduce((total, product) => total + product.price * product.quantity, 0);
+    return items.reduce((total, item) => total + item.price * item.quantity, 0);
 }
 
 export default function cart(state = initialState, action) {

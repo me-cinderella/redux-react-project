@@ -48,8 +48,7 @@ class Products extends Component {
 
 function mapStateToProps(state, props) {
     return {
-        products: state.fetch.products,
-        error: state.fetch.error
+        products: state.fetch.products
     };
 }
 
