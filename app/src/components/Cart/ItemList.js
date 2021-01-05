@@ -10,22 +10,22 @@ const ItemList = (props) => {
                 return(
                     <Card className="m-2">
                         <Row className="m-2">
-                            <Col xs={2} className="align-self-center">
+                            <Col sm={2} xs={12} className="align-self-center">
                                 <img
                                 alt={item.name}
                                 style={{margin: "0 auto", maxHeight: "50px"}} 
                                 src={item.image} />
                             </Col>
-                            <Col xs={10}>
+                            <Col sm={10} xs={12}>
                                 <Row>
                             <h4 className="m-2">{item.name}</h4></Row>
                             <Row>
         
-                            <Col xs={6}>
+                            <Col sm={6} xs={12}>
                                 <p className="price-label m-0">Precio: ${item.price} CPL </p>
                                 <p className="qty-label m-0">Cantidad: {item.quantity}</p>
                             </Col>
-                            <Col xs={6} className="align-self-center">
+                            <Col sm={6} xs={12} className="align-self-center">
                                 <button 
                                 onClick={() => props.increaseItemInCart(item)}
                                 className="btn btn-primary btn-sm m-1">

@@ -15,10 +15,10 @@ function MiniCart(props) {
                 props.items.map(item => {
                     return(
                         <Row>
-                            <Col xs={10} md={8} className="align-left">
+                            <Col sm={8} xs={12} className="align-left">
                                 <h5>{item.name} - {item.type}</h5>
                             </Col>
-                            <Col xs={2} className="align-right">
+                            <Col sm={2} xs={12} className="align-right">
                                 <p>${item.price}</p>
                             </Col>
                         </Row>

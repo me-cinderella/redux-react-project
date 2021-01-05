@@ -9,16 +9,16 @@ class Products extends Component {
 
     const productList = this.props.products.map( (item,index)  => {
       return (
-      <Col xs={4}>
+      <Col md={4} xs={12}>
         <Card key={index} className="m-2 p-2">
           <Row className="shop-product-card align-items-center">
-              <Col xs={6}>
+              <Col md={6} xs={12}>
                 <img 
                 src={item.image} 
                 alt={item.name} 
                 className="product-image" />
               </Col>
-            <Col xs={6} className="d-flex flex-column">
+            <Col md={6} xs={12} className="d-flex flex-column">
               <h3 className="align-top">{item.name}</h3>
               <p className="align-top">{item.type}</p>
               <h4 className="align-bottom">${item.price} CLP</h4>

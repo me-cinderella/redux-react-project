@@ -1,5 +1,5 @@
 const initialState = {
-    checkout: false,
+    isCheckedout: false,
     items: [],
     total: 0
 }
@@ -48,7 +48,6 @@ export default function cart(state = initialState, action) {
 
         case "DECREASE":
 
-
             if (item.quantity > 1) {
                 item.quantity--;
             } else {
@@ -62,14 +61,14 @@ export default function cart(state = initialState, action) {
 
         case "CHECKOUT":
             return {
-                checkout: true,
+                isCheckedout: true,
                 total: 0,
                 items: []
             }
             
         case "CLEAR":
                 return {
-                    checkout: false,
+                    isCheckedout: false,
                     total: 0,
                     items: []
                 }

@@ -46,3 +46,13 @@
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 576px) {
+    .product-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .shop-product-card {
+        height: auto;
+    }
+}
